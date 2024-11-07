@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Disallow admin and private routes
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://hotels-bali.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10
