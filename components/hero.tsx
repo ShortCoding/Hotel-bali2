@@ -3,22 +3,20 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Hero() {
   return (
     <div className="relative h-[80vh] flex items-center justify-center">
       <div 
         className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: "url('https://upload.wikimedia.org/wikipedia/commons/0/0e/A_view_of_entrance_stairs_to_Pura_Besakih_Hindu_Temple_Bali_Indonesia.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
       >
-        <div className="absolute inset-0 bg-black/60" />
+        <Image src={"hero.webp"} alt="Bali" fill  objectFit="cover"/>
+        <div className="absolute inset-0 bg-black/70" />
       </div>
       
       <div className="relative z-10 text-center space-y-6 max-w-3xl mx-auto px-4">
+        
         <motion.h1 
           className="text-4xl md:text-6xl font-bold text-white"
           initial={{ opacity: 0, y: 20 }}
