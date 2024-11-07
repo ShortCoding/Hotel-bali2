@@ -11,12 +11,12 @@ export function Hero() {
       <div 
         className="absolute inset-0 z-0"
       >
-        <Image src={"hero.webp"} alt="Bali" fill  objectFit="cover"/>
+        <Image src={"hero.webp"} alt="Bali" fill  objectFit="cover" priority/>
         <div className="absolute inset-0 bg-black/70" />
       </div>
       
       <div className="relative z-10 text-center space-y-6 max-w-3xl mx-auto px-4">
-        
+        ©
         <motion.h1 
           className="text-4xl md:text-6xl font-bold text-white"
           initial={{ opacity: 0, y: 20 }}
